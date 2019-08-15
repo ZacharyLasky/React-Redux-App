@@ -17,14 +17,15 @@ function Dogs(props) {
           'Dog Generator'
         )}
       </button>
-      <DogCard />
+      <DogCard dogs={props.dogs}/>
     </>
   )
 }
 
 const mapStateToProps = state => {
   return {
-    state
+    isLoading: state.isLoading,
+    dogs: state.dogs
   }
 }
 
