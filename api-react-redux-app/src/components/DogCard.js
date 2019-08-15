@@ -1,13 +1,13 @@
 import React from 'react';
+import './DogCard.scss';
 
 export default function DogCard(props) {
 
   return (
-    <>
-      <h1>DogCard Component</h1>
+    <div className="dog-card">
       {props.dogs.map(dog => {
         return <img src={dog}></img>
       })}
-    </>
+    </div>
   )
 }

@@ -9,12 +9,12 @@ function Dogs(props) {
 
   return (
     <>
-      <h1>DOG API APP</h1>
+      <h1>3-DOG GENERATOR</h1>
       <button onClick={props.getData}>
         {props.isLoading ? (
           <Loader type="Tailspin" color="#00BFFF" height="15" width="100" />
         ) : (
-          'Dog Generator'
+          'Click To See Dogs'
         )}
       </button>
       <DogCard dogs={props.dogs}/>
